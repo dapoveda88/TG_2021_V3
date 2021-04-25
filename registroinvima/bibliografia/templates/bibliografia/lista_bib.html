@@ -1,0 +1,14 @@
+{%extends 'principal/base.html'%}
+
+{%block content%}
+
+<h1>Referencias Bibliograficas</h1>
+<br>
+<ul>
+	{%for i in lista %}
+		{{i.label}} <td>{{i}} <br>
+		<td>{{i.help_text}} <br>
+	{%endfor%}
+</ul>
+
+{%endblock%}
